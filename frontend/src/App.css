@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+
+.tarefas {
+  list-style-type: none;
+  padding-left: 0; 
+}
+
+.tarefas li{
+  background-color: rgb(200, 193, 193);
+  width: 20%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.linha-topo {
+  align-items: center;
+}
