@@ -1,41 +1,160 @@
 body {
-  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
 
 .tarefas {
-  list-style-type: none;
-  padding-left: 0; 
+  list-style: none;
+  padding: 0;
 }
 
-.tarefas li{
-  background-color: rgb(200, 193, 193);
-  width: 20%;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 30px;
-  padding: 10px;
+.tarefa-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.tarefa-item:hover {
+  transform: translateY(-2px);
+}
+
+.tarefa-conteudo {
+  flex: 1;
+  text-align: left;
 }
 
 .linha-topo {
-  align-items: center;
-}
-
-.botaoadicionar{
-  background-color: lightgreen;
-}
-
-.newlist{
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  width: 30%;
-  flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
-.titleaddlist{
+.linha-topo input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.btn-remove {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-remove:hover {
+  background-color: #e60000;
+}
+
+.btn-edit {
+  background-color: #ffca28;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-edit:hover {
+  background-color: #f4b400;
+  transform: scale(1.1);
+}
+
+.botaoadicionar {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.botaoadicionar:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 40px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.add-form {
+  background: white;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.add-form h2 {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-form input,
+.add-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.add-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-form button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.add-form button:hover {
+  background-color: #1e7e34;
 }

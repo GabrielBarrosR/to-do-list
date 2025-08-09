@@ -61,4 +61,21 @@ router.delete("/remove/:id", async (req, res) => {
   }
 })
 
+router.put('/edit/:id', async (req, res) => {
+  try{
+    const {id} = req.params;
+    const {titulo, descricao} = req.body;
+
+    const atualizardados = await list.findByIdAndUpdate(id, {
+      titulo, descricao
+    },
+    {
+      new: true,
+      runValidators: true,
+      })
+    res.status(200).json(atualizardados);
+  } catch (error) {
+    res.status(500).json({erro: "Erro ao editar lista"})
+  }
+})
 module.exports = router;

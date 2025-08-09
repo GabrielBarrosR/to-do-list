@@ -1,0 +1,84 @@
+# ToDo List - Projeto de Estudo (React + Node.js)
+
+Este é um projeto de estudo de uma ToDo List (lista de tarefas) desenvolvido com **React** no frontend e **Node.js** (Express + MongoDB) no backend.
+
+## Funcionalidades
+
+- Adicionar, editar, remover e marcar tarefas como concluídas
+- Interface simples e intuitiva
+- Integração completa entre frontend e backend
+
+## Tecnologias Utilizadas
+
+- **Frontend:** React
+- **Backend:** Node.js, Express, Mongoose
+- **Banco de Dados:** MongoDB
+
+## Como rodar o projeto
+
+1. **Clone o repositório:**
+   ```
+   git clone https://github.com/GabrielBarrosR/to-do-list.git
+   ```
+
+2. **Instale as dependências:**
+   ```
+    cd backend
+    npm install
+
+    cd ../frontend
+    npm install
+   ```
+
+3. **Inicie o projeto:**
+   ```
+   npm start
+   ```
+
+Isso irá iniciar tanto o frontend quanto o backend automaticamente.
+
+> **Observação:** Certifique-se de que o MongoDB está rodando na sua máquina (`mongodb://localhost:27017`).
+
+## Estrutura de Pastas
+
+```
+├── backend
+│   ├── models
+│   │   └── users.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── routes.js
+│   └── server.js
+├── frontend
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   └── src
+│       ├── App.css
+│       ├── App.js
+│       ├── App.test.js
+│       ├── index.css
+│       ├── index.js
+│       ├── logo.svg
+│       ├── pages
+│       │   ├── AddLists.js
+│       │   └── Home.js
+│       ├── reportWebVitals.js
+│       └── setupTests.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── readme
+```
+
+## Objetivo
+
+Este projeto foi desenvolvido com fins de estudo, para praticar integração entre React e Node.js, além de conceitos de API REST e manipulação de banco de dados com MongoDB.
+
+---
